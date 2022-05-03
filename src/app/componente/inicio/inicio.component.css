@@ -1,0 +1,39 @@
+.texto {
+    text-align: justify;
+    color: black;
+    font-size: x-large;
+}
+
+img {
+    height: 250px;
+    left: 200px;
+}
+
+p {
+    text-align: justify;
+}
+
+h5 {
+    text-align: center;
+}
+
+.logo {
+    margin: 150px 0 0 40%;
+    width: 200px;
+    height: 200px;
+    animation-name: girarb;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    display: inline-table;
+    border-radius: 40%;
+}
+
+@keyframes girarb {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

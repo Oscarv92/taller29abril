@@ -1,0 +1,88 @@
+.titulo {
+    text-align: center;
+    font-size: x-large;
+}
+
+.tarjetero {
+    margin: 70px 0 100px 0;
+    -webkit-perspective: 800;
+    perspective: 800;
+}
+
+.vs {
+    margin: 170px 35px 0 70px;
+    text-align: center;
+}
+
+.vs h3 {
+    color: #B20600;
+}
+
+.vs h2 {
+    color: #00092C;
+}
+
+.tarjeta {
+    width: 400px;
+    height: 350px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: .7s ease;
+}
+
+.tarjeta::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    background: #5D4157;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #A8CABA, #5D4157);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #A8CABA, #5D4157);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 100%;
+    height: 100%;
+    filter: blur(50px);
+    z-index: -1;
+}
+
+.frontal,
+.posterior {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+}
+
+.posterior {
+    transform: rotatey(180deg);
+    padding: 25px;
+    justify-content: center;
+    text-align: justify;
+}
+
+.posterior h1 {
+    text-align: center;
+    color: #121212;
+}
+
+.posterior p {
+    margin: 40px 0;
+}
+
+.tarjetero:hover .tarjeta {
+    transform: rotatey(180deg);
+}
+
+.card-img-overlay {
+    cursor: pointer;
+}
