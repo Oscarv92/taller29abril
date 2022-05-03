@@ -1,0 +1,50 @@
+.logo {
+    margin-left: 40%;
+    margin-top: 120px;
+    animation-name: girarb;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    display: inline-table;
+    border-radius: 40%;
+}
+
+.logo img {
+    height: 150px;
+    width: 150px;
+}
+
+@keyframes girarb {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.titulo {
+    color: #EE5007;
+}
+
+.titulo h1 {
+    font-family: sans-serif;
+}
+
+.texto {
+    text-align: justify;
+    font-size: large;
+    color: black;
+}
+
+.preferencias {
+    text-align: center;
+}
+
+.button {
+    text-align: center;
+}
+
+.button button {
+    background-color: #EE5007;
+}

@@ -1,6 +1,10 @@
 .titulo {
     text-align: center;
-    font-size: x-large;
+}
+
+.titulo h1 {
+    font-size: 45px;
+    color: #B20600;
 }
 
 .tarjetero {

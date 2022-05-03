@@ -9,6 +9,8 @@ import { FooterComponent } from './componente/footer/footer.component';
 import { BajoComponent } from './componente/bajo/bajo.component';
 import { MedioComponent } from './componente/medio/medio.component';
 import { AltoComponent } from './componente/alto/alto.component';
+import { RegistroComponent } from './componente/registro/registro.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -18,11 +20,13 @@ import { AltoComponent } from './componente/alto/alto.component';
     FooterComponent,
     BajoComponent,
     MedioComponent,
-    AltoComponent
+    AltoComponent,
+    RegistroComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

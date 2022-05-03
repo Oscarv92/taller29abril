@@ -18,15 +18,18 @@ h5 {
 }
 
 .logo {
-    margin: 150px 0 0 40%;
-    width: 200px;
-    height: 200px;
+    margin: 100px 0 0 40%;
     animation-name: girarb;
-    animation-duration: 10s;
+    animation-duration: 15s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     display: inline-table;
     border-radius: 40%;
+}
+
+.logo img {
+    width: 200px;
+    height: 200px;
 }
 
 @keyframes girarb {
